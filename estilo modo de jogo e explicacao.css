@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(imagens/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 15%;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 27px;
+    color: white;
+    width: 75%;
+}
+
+.botao {
+    background-color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 15px 25px;
+    margin-top: 20px;
+    width: 20%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
