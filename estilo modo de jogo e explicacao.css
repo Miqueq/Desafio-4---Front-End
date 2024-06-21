@@ -13,16 +13,22 @@ body {
     background-image: url(imagens/fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .conteudo {
     display: flex;
     flex-direction: column;
-    padding: 15%;
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 27px;
     color: white;
-    width: 75%;
+    width: 70%;
+    margin-left: 18%;
 }
 
 .botao {
@@ -36,4 +42,13 @@ body {
     text-decoration: none;
     color: black;
     text-align: center;
+    cursor: pointer;
+}
+@media (max-width: 650px) {
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
