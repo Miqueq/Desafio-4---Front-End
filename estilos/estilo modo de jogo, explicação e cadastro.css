@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 120vh;
+    background-image: url(/imagens/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+.logo_memorias {
+    width: 10%;
+    margin-left: 15px;
+}
+
+.barra_navegacao {
+    display: flex;
+    align-items: center;
+    gap: 11%;
+}
+
+.links {
+    text-decoration: none;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: white;
+
+}
+
+.botao_jogar {
+    text-decoration: none;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: black;
+    background-color: white;
+    padding: 6px 5px;
+    border-radius: 5px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 27px;
+    color: white;
+    width: 70%;
+    margin-left: 18%;
+}
+
+.botao {
+    background-color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 20%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.titulo {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+
+.formulario {
+    gap: 40vw;
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 35%;
+}
+
+.formulario__conteudo {
+    font-family: "Montserrat", sans-serif;
+    padding: 2vw;
+    font-size: 1.8vw;
+    color: white;
+}
+
+form input {
+    outline: unset;
+    width: 22vw;
+    height: 6vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 3vh;
+    font-size: 1.2vw;
+}
+
+@media (max-width: 650px) {
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
