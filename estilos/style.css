@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat Alternates", sans-serif;
+    background-image: url("/imagens/fundoJogo1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+#nav-logo {
+    max-height: 75px;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 70px;
+}
+
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-default {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: "Montserrat Alternates", sans-serif;
+    text-decoration: none;
+}
+
+#mobile_btn {
+    display: none;
+    color: #fff;
+}
+
+#mobile_menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#mobile_menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#mobile_menu ul .nav-item {
+    margin: 10px 0;
+}
+
+#mobile_menu ul .nav-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#inicio {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.titulo {
+    color: #fff;
+    font-size: 6em;
+    text-align: center;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+#cta_buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#cta_buttons .btn-default {
+    font-size: 1.3em;
+}
+
+@media (max-width: 830px) {
+    .nav-item {
+        margin-left: 50px;
+    }
+
+    .titulo {
+        font-size: 4em;
+    }
+
+    #cta_buttons .btn-default {
+        font-size: 1em;
+    }
+
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #nav_list {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+    }
+
+    .titulo {
+        font-size: 3em;
+    }
+
+    #cta_buttons .btn-default {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 2em;
+    }
+
+    #cta_buttons .btn-default {
+        font-size: 0.8em;
+    }
+}
