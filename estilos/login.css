@@ -1,0 +1,72 @@
+body {
+    font-family: "Roboto Light", sans-serif;
+    background: url("/imagens/fundo.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+#texto-descritivo {
+    text-align: center;
+    margin-top: 0;
+}
+
+#forms-login h2 {
+    color: #FFF;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#forms-login {
+    width: 40%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#forms-login input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 7px;
+}
+
+#forms-login div {
+    width: 100%;
+    text-align: left;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+a {
+    color: #ce9f05;
+    text-decoration: none;
+}
+
+#login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ce9f05;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#login-button:hover {
+    background-color: #8d6d01;
+}
