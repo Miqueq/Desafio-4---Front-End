@@ -9,7 +9,13 @@
 }
 
 body {
-    background-color: #140532;
+    background-image: url(/imagens/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    background-attachment: fixed;
+
 }
 
 .logo_memorias {
